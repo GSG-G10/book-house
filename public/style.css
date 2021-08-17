@@ -106,4 +106,7 @@ body {
     .book-shelf {
         width: 80%;
     }
+    .control-buttons {
+        display: flex;
+    }
 }
