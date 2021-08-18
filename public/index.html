@@ -32,13 +32,27 @@
                 Change</div>
             <div class="book-auhor">Iain McCalman</div>
             <div class="control-buttons">
-                <button class="borrow-book">Borrow</button>
+                <button class="borrow-book" onclick="openForm()">Borrow</button>
             </div>
 
         </div>
     </section>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h2>Borrow book and gain knowledge!</h2>
 
-    <script src="./script.js"></script>
+            <label for="text"><b>Name</b></label>
+            <input type="text" placeholder="Enter your name" name="user" required>
+
+            <label for="text"><b>Address</b></label>
+            <input type="text" placeholder="Enter your current address" name="address" required>
+
+            <button type="submit" class="btn">Borrow</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

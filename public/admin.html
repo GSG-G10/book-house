@@ -19,7 +19,7 @@
         <nav>
             <h1 class="nav-bar-header-name">B<span class="nav-bar-header-name2">Book</span></h1>
         </nav>
-        <button class="admin-button"><img src="./pictures/add.png" alt="add book image"></button>
+        <button class="admin-button" onclick="openForm()"><img src="./pictures/add.png" alt="add book image"></button>
     </header>
 
     <section class="book">
@@ -37,9 +37,25 @@
                 <button class="borrow-book">Return</button>
             </div>
         </div>
-    </section>
 
-    <script src="./script.js"></script>
+    </section>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <label for="img"><b>Book image</b></label>
+            <input type="url" placeholder="Enter url of your image" name="cover url" required>
+
+            <label for="text"><b>Book name</b></label>
+            <input type="text" placeholder="Enter the book name" name="book name" required>
+
+            <label for="text"><b>Author</b></label>
+            <input type="text" placeholder="Author" name="Author" required>
+
+            <button type="submit" class="btn">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
