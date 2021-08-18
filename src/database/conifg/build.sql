@@ -13,7 +13,7 @@ CREATE TABLE users (
 CREATE TABLE books (
   id SERIAL PRIMARY KEY NOT NULL,
   book_name VARCHAR(100) NOT NULL,
-  book_image VARCHAR(1000) NOT NULL,
+  book_image VARCHAR(10000) NOT NULL,
   author TEXT NOT NULL,
   state TEXT NOT NULL
 );

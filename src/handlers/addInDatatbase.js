@@ -7,10 +7,14 @@ const { postUserQuery,postBookQuery,postBookingQuery } = require('../database/qu
 
 
 const addusers = (req,res) => {
-    postUser(req.body.name,req.body.location)
-    res.send('add work')
+    postUserQuery(req.body.name,req.body.location)
+    res.send('ok')
 }
 
 
+const addbook = (req,res) => {
+    postBookQuery(req.body.book_name,req.body.book_image,req.body.author,req.body.state)
+    res.redirect('/admin')
+}
 
-module.exports = addusers
+module.exports = { addusers,addbook }
