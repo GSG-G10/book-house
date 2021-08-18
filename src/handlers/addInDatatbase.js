@@ -11,4 +11,6 @@ const addusers = (req,res) => {
     res.send('add work')
 }
 
-module.exports = adminHandler
+
+
+module.exports = addusers
