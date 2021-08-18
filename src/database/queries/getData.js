@@ -1,10 +1,12 @@
 const connection = require('../conifg/connection');
 
-const getUsers = () => {
+const getUsersQuery = () => {
     return connection.query(`SELECT * FROM users`);
 };
-const getBooks = () => {
+const getBooksQuery = () => {
     return connection.query(`SELECT * FROM books`);
 };
 
-module.exports = { getUsers , getBooks };   
+
+
+module.exports = { getUsersQuery , getBooksQuery };   
